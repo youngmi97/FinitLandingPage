@@ -53,6 +53,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "24px",
     lineHeight: "29px",
     marginTop: "35px",
+    color: "#18022E",
   },
   submitInfo: {
     width: "100%",

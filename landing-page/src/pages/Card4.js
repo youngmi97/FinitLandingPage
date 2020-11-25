@@ -42,7 +42,6 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "61px",
     /* or 122% */
     letterSpacing: "0.02em",
-    marginLeft: 220,
   },
   medText: {
     display: "flex",
@@ -54,7 +53,8 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "24px",
     lineHeight: "29px",
     marginTop: "35px",
-    marginLeft: 220,
+    color: "#18022E",
+    zIndex: 1,
   },
   medText1: {
     display: "flex",
@@ -66,7 +66,8 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "24px",
     lineHeight: "29px",
     marginTop: "10px",
-    marginLeft: 220,
+    color: "#18022E",
+    zIndex: 1,
     paddingBottom: 100,
   },
   submitInfo: {
@@ -84,13 +85,12 @@ const useStyles = makeStyles((theme) => ({
   pageMockUp: {
     position: "absolute",
     top: "100vh" + "80px",
-    paddingLeft: 92,
-    zIndex: 1,
+    paddingRight: 92,
   },
   pageMockUp1: {
     position: "absolute",
+    right: "50vh",
     top: "330vh",
-    right: 0,
     zIndex: 0,
     opacity: 0.2,
   },
@@ -102,7 +102,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Card4() {
+function Card3() {
   const classes = useStyles();
   return (
     <div style={{ width: "100%" }}>
@@ -115,6 +115,21 @@ function Card4() {
         xs={12}
         style={{ margin: 0, padding: 0 }}
       >
+        <Grid
+          container
+          className={classes.mockUpGrid}
+          direction="row"
+          justify="flex-end"
+          alignItems="center"
+          xs={6}
+          style={{ margin: 0, padding: 0 }}
+        >
+          <img
+            className={classes.pageMockUp}
+            src="/Group 187.png"
+            alt="mockPage"
+          ></img>
+        </Grid>
         <Grid
           item
           className={classes.textHolder}
@@ -133,24 +148,9 @@ function Card4() {
             <div>Have more control over your spending.</div>
           </div>
         </Grid>
-        <Grid
-          container
-          className={classes.mockUpGrid}
-          direction="row"
-          justify="flex-start"
-          alignItems="center"
-          xs={6}
-          style={{ margin: 0, padding: 0 }}
-        >
-          <img
-            className={classes.pageMockUp}
-            src="/Group 187.png"
-            alt="mockPage"
-          ></img>
-        </Grid>
       </Grid>
     </div>
   );
 }
 
-export default Card4;
+export default Card3;

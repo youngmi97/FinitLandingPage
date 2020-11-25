@@ -5,6 +5,7 @@ import Card1 from "./pages/Card1";
 import Card2 from "./pages/Card2";
 import Card3 from "./pages/Card3";
 import Card4 from "./pages/Card4";
+import Card5 from "./pages/Card5";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
       </div>
       <div className="App-card" style={{ margin: 0, padding: 0 }}>
         <Card4 />
+      </div>
+      <div className="App-bottom" style={{ margin: 0, padding: 0 }}>
+        <Card5 />
       </div>
     </div>
   );

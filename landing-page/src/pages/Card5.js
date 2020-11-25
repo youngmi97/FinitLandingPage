@@ -15,16 +15,17 @@ const useStyles = makeStyles((theme) => ({
     boxSizing: "border-box",
   },
   startButton: {
-    marginLeft: "16px",
-    height: "56px",
-    width: "133px",
-    background: "#6600FF;",
-    boxShadow: "8px 16px 40px rgba(42, 0, 77, 0.3)",
+    height: "57px",
+    width: "611px",
+    background: "white",
+    boxShadow: "8px 16px 40px rgba(47, 4, 89, 0.3)",
     borderRadius: "6px",
     fontStyle: "normal",
+    marginTop: 64,
     fontWeight: 600,
     fontSize: "12px",
     lineHeight: "17px",
+    color: "#5c12A6",
     /* identical to box height */
 
     textAlign: "center",
@@ -35,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
   bigText: {
     display: "flex",
     flexDirection: "column",
-    alignItems: "flex-start",
+    alignItems: "center",
     fontStyle: "normal",
     fontWeight: "bold",
     fontSize: "50px",
@@ -43,33 +44,7 @@ const useStyles = makeStyles((theme) => ({
     /* or 122% */
     letterSpacing: "0.02em",
   },
-  medText: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "flex-start",
-    width: "100%",
-    fontStyle: "normal",
-    fontWeight: "normal",
-    fontSize: "24px",
-    lineHeight: "29px",
-    marginTop: "35px",
-    color: "#18022E",
-    zIndex: 1,
-  },
-  medText1: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "flex-start",
-    width: "100%",
-    fontStyle: "normal",
-    fontWeight: "normal",
-    fontSize: "24px",
-    lineHeight: "29px",
-    marginTop: "10px",
-    color: "#18022E",
-    zIndex: 1,
-    paddingBottom: 100,
-  },
+
   submitInfo: {
     width: "100%",
     height: "100px",
@@ -118,39 +93,24 @@ function Card3() {
         <Grid
           container
           className={classes.mockUpGrid}
-          direction="row"
-          justify="flex-end"
-          alignItems="center"
-          xs={6}
-          style={{ margin: 0, padding: 0 }}
-        >
-          <img
-            className={classes.pageMockUp}
-            src="/Frame 170.png"
-            alt="mockPage"
-          ></img>
-        </Grid>
-        <Grid
-          item
-          className={classes.textHolder}
           direction="column"
-          xs={6}
+          justify="center"
+          alignItems="center"
+          xs={12}
           style={{ margin: 0, padding: 0 }}
         >
-          <img
-            className={classes.pageMockUp1}
-            src="/path.png"
-            alt="mockPage"
-          ></img>
           <div className={classes.bigText}>
-            <div>Monitor usage </div>
+            <div>Control how you spend,</div>
+            <div>and when you spend.</div>
           </div>
-          <div className={classes.medText}>
-            <div>Is this plan the one for you? </div>
-          </div>
-          <div className={classes.medText1}>
-            <div>Confidently make the choice to continue use by </div>
-            <div>knowing how much you use it.</div>
+          <div>
+            <Button
+              className={classes.startButton}
+              variant="contained"
+              color="primary"
+            >
+              GET STARTED
+            </Button>
           </div>
         </Grid>
       </Grid>

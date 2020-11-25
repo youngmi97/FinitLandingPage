@@ -53,6 +53,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "24px",
     lineHeight: "29px",
     marginTop: "35px",
+    color: "#18022E",
   },
   submitInfo: {
     width: "100%",
@@ -118,7 +119,7 @@ function Card1() {
             <div>Full Visibility</div>
           </div>
           <div className={classes.medText}>
-            <div>Automatically link your subscriptions and get a fulll</div>
+            <div>Automatically link your subscriptions and get a full</div>
             <div>picture of what subscriptions you are currently using.</div>
           </div>
         </Grid>
