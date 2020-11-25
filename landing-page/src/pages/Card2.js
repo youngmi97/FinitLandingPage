@@ -31,18 +31,17 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: "0.03em",
     textTransform: "uppercase",
   },
-  bigGrid: { width: "100%" },
+  bigGrid: { width: "100%", margin: 0, padding: 0 },
   bigText: {
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",
     fontStyle: "normal",
     fontWeight: "bold",
-    fontSize: "72px",
-    lineHeight: "88px",
+    fontSize: "50px",
+    lineHeight: "61px",
     /* or 122% */
     letterSpacing: "0.02em",
-    marginLeft: "100px",
   },
   medText: {
     display: "flex",
@@ -54,7 +53,6 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "24px",
     lineHeight: "29px",
     marginTop: "35px",
-    marginLeft: "100px",
   },
   submitInfo: {
     width: "100%",
@@ -69,29 +67,19 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "100px",
   },
   pageMockUp: {
-    float: "right",
-
-    width: "45%",
     position: "absolute",
-
-    top: "80px",
-    right: "0px",
+    top: "100vh" + "80px",
+    paddingRight: 92,
   },
   textHolder: {
     width: "100%",
-  },
-  phoneMockUp: {
-    float: "right",
-    position: "absolute",
-    top: "210px",
-    right: "365px",
   },
   mockUpGrid: {
     width: "100%",
   },
 }));
 
-function Main() {
+function Card2() {
   const classes = useStyles();
   return (
     <div style={{ width: "100%" }}>
@@ -102,62 +90,42 @@ function Main() {
         justify="center"
         alignItems="center"
         xs={12}
+        style={{ margin: 0, padding: 0 }}
       >
-        <Grid item className={classes.textHolder} direction="column" xs={6}>
-          <div className={classes.bigText}>
-            <div>Subscriptions</div>
-            <div>made easy</div>
-          </div>
-          <div className={classes.medText}>
-            <div>Add, make changes and cancel</div>
-            <div>subscriptions in one place</div>
-          </div>
-          <div className={classes.submitInfo}>
-            <Grid
-              item
-              className={classes.submitInfo2}
-              direction="row"
-              xs={12}
-              spacing={3}
-            >
-              <TextField
-                className={classes.textField}
-                id="outlined-basic"
-                label="Email"
-                variant="outlined"
-              />
-              <Button
-                className={classes.startButton}
-                variant="contained"
-                color="primary"
-              >
-                GET STARTED
-              </Button>
-            </Grid>
-          </div>
-        </Grid>
         <Grid
           container
           className={classes.mockUpGrid}
           direction="row"
-          justify="center"
+          justify="flex-end"
           alignItems="center"
           xs={6}
+          style={{ margin: 0, padding: 0 }}
         >
           <img
             className={classes.pageMockUp}
-            src="/mockUpGroup2.png"
+            src="/Group 169.png"
             alt="mockPage"
           ></img>
-          {/* <img
-            className={classes.phoneMockUp}
-            src="/phoneMockUp.svg"
-            alt="mockPhone"
-          ></img> */}
+        </Grid>
+        <Grid
+          item
+          className={classes.textHolder}
+          direction="column"
+          xs={6}
+          style={{ margin: 0, padding: 0 }}
+        >
+          <div className={classes.bigText}>
+            <div>Say no to unwanted </div>
+            <div>recurring payments</div>
+          </div>
+          <div className={classes.medText}>
+            <div>Forgot about that free trial you meant to cancel? </div>
+            <div>Don’t worry, we’ve got you covered.</div>
+          </div>
         </Grid>
       </Grid>
     </div>
   );
 }
 
-export default Main;
+export default Card2;

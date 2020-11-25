@@ -31,18 +31,18 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: "0.03em",
     textTransform: "uppercase",
   },
-  bigGrid: { width: "100%" },
+  bigGrid: { width: "100%", margin: 0, padding: 0 },
   bigText: {
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",
     fontStyle: "normal",
     fontWeight: "bold",
-    fontSize: "72px",
-    lineHeight: "88px",
+    fontSize: "50px",
+    lineHeight: "61px",
     /* or 122% */
     letterSpacing: "0.02em",
-    marginLeft: "100px",
+    marginLeft: 220,
   },
   medText: {
     display: "flex",
@@ -54,7 +54,20 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "24px",
     lineHeight: "29px",
     marginTop: "35px",
-    marginLeft: "100px",
+    marginLeft: 220,
+  },
+  medText1: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "flex-start",
+    width: "100%",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: "24px",
+    lineHeight: "29px",
+    marginTop: "10px",
+    marginLeft: 220,
+    paddingBottom: 100,
   },
   submitInfo: {
     width: "100%",
@@ -69,29 +82,27 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "100px",
   },
   pageMockUp: {
-    float: "right",
-
-    width: "45%",
     position: "absolute",
-
-    top: "80px",
-    right: "0px",
+    top: "100vh" + "80px",
+    paddingLeft: 92,
+    zIndex: 1,
+  },
+  pageMockUp1: {
+    position: "absolute",
+    top: "330vh",
+    right: 0,
+    zIndex: 0,
+    opacity: 0.2,
   },
   textHolder: {
     width: "100%",
-  },
-  phoneMockUp: {
-    float: "right",
-    position: "absolute",
-    top: "210px",
-    right: "365px",
   },
   mockUpGrid: {
     width: "100%",
   },
 }));
 
-function Main() {
+function Card3() {
   const classes = useStyles();
   return (
     <div style={{ width: "100%" }}>
@@ -102,62 +113,49 @@ function Main() {
         justify="center"
         alignItems="center"
         xs={12}
+        style={{ margin: 0, padding: 0 }}
       >
-        <Grid item className={classes.textHolder} direction="column" xs={6}>
+        <Grid
+          item
+          className={classes.textHolder}
+          direction="column"
+          xs={6}
+          style={{ margin: 0, padding: 0 }}
+        >
           <div className={classes.bigText}>
-            <div>Subscriptions</div>
-            <div>made easy</div>
+            <div>Monitor usage </div>
           </div>
           <div className={classes.medText}>
-            <div>Add, make changes and cancel</div>
-            <div>subscriptions in one place</div>
+            <div>Is this plan the one for you? </div>
           </div>
-          <div className={classes.submitInfo}>
-            <Grid
-              item
-              className={classes.submitInfo2}
-              direction="row"
-              xs={12}
-              spacing={3}
-            >
-              <TextField
-                className={classes.textField}
-                id="outlined-basic"
-                label="Email"
-                variant="outlined"
-              />
-              <Button
-                className={classes.startButton}
-                variant="contained"
-                color="primary"
-              >
-                GET STARTED
-              </Button>
-            </Grid>
+          <div className={classes.medText1}>
+            <div>Confidently make the choice to continue use by </div>
+            <div>knowing how much you use it.</div>
           </div>
         </Grid>
         <Grid
           container
           className={classes.mockUpGrid}
           direction="row"
-          justify="center"
+          justify="flex-start"
           alignItems="center"
           xs={6}
+          style={{ margin: 0, padding: 0 }}
         >
           <img
             className={classes.pageMockUp}
-            src="/mockUpGroup2.png"
+            src="/Frame 170.png"
             alt="mockPage"
           ></img>
-          {/* <img
-            className={classes.phoneMockUp}
-            src="/phoneMockUp.svg"
-            alt="mockPhone"
-          ></img> */}
+          <img
+            className={classes.pageMockUp1}
+            src="/Path.png"
+            alt="mockPage"
+          ></img>
         </Grid>
       </Grid>
     </div>
   );
 }
 
-export default Main;
+export default Card3;
