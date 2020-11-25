@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
@@ -91,8 +91,29 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Main() {
+function Main(props) {
   const classes = useStyles();
+
+  const [email, setEmail] = useState("");
+  const [btnDisabled, setBtnDisabled] = useState(true);
+
+  function isValidEmailAddress(address) {
+    return !!address.match(/.+@.+/);
+  }
+
+  function openForm() {
+    window.open("https://sureplus.typeform.com/to/A0mG6n8u");
+  }
+
+  function checkEmail(e) {
+    console.log("email value", e.target.value);
+    if (isValidEmailAddress(e.target.value)) {
+      setBtnDisabled(false);
+    } else {
+      setBtnDisabled(true);
+    }
+  }
+
   return (
     <div style={{ width: "100%" }}>
       <Grid
@@ -124,12 +145,17 @@ function Main() {
                 className={classes.textField}
                 id="outlined-basic"
                 label="Email"
+                type="email"
+                errorText={"Please enter a valid email"}
+                onChange={checkEmail}
                 variant="outlined"
               />
               <Button
                 className={classes.startButton}
+                onClick={openForm}
                 variant="contained"
                 color="primary"
+                disabled={btnDisabled}
               >
                 GET STARTED
               </Button>
