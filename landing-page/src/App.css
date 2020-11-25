@@ -13,6 +13,16 @@
   }
 } */
 
+.bigText {
+  /* H1 [72] • B */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 88px;
+  /* or 122% */
+  letter-spacing: 0.02em;
+}
+
 .App-header {
   background: linear-gradient(
     107.15deg,
