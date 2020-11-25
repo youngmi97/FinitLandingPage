@@ -71,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
   pageMockUp: {
     float: "right",
     position: "absolute",
-    top: "80px",
+    top: "100vh" + "80px",
     right: "0px",
   },
   textHolder: {
@@ -80,7 +80,7 @@ const useStyles = makeStyles((theme) => ({
   phoneMockUp: {
     float: "right",
     position: "absolute",
-    top: "210px",
+    top: "100vh" + "210px",
     right: "365px",
   },
   mockUpGrid: {
@@ -88,7 +88,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Main() {
+function Card1() {
   const classes = useStyles();
   return (
     <div style={{ width: "100%" }}>
@@ -157,4 +157,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Card1;
