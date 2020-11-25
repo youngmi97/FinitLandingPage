@@ -70,6 +70,7 @@ const useStyles = makeStyles((theme) => ({
   },
   pageMockUp: {
     float: "right",
+    width: "45%",
     position: "fixed",
     top: "80px",
     right: "0px",
@@ -143,14 +144,14 @@ function Main() {
         >
           <img
             className={classes.pageMockUp}
-            src="/webMockUp.svg"
+            src="/mockUpGroup2.png"
             alt="mockPage"
           ></img>
-          <img
+          {/* <img
             className={classes.phoneMockUp}
             src="/phoneMockUp.svg"
             alt="mockPhone"
-          ></img>
+          ></img> */}
         </Grid>
       </Grid>
     </div>
