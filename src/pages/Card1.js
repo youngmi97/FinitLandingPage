@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
@@ -43,6 +43,19 @@ const useStyles = makeStyles((theme) => ({
     /* or 122% */
     letterSpacing: "0.02em",
   },
+  bigText2: {
+    display: "flex",
+    width: "90%",
+    flexDirection: "column",
+    alignItems: "center",
+    fontStyle: "normal",
+    fontWeight: "bold",
+    fontSize: "50px",
+    lineHeight: "88px",
+    marginLeft: "20px",
+    /* or 122% */
+    letterSpacing: "0.02em",
+  },
   medText: {
     display: "flex",
     flexDirection: "column",
@@ -51,6 +64,19 @@ const useStyles = makeStyles((theme) => ({
     fontStyle: "normal",
     fontWeight: "normal",
     fontSize: "24px",
+    lineHeight: "29px",
+    marginTop: "35px",
+    color: "#18022E",
+  },
+  medText2: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    width: "90%",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: "24px",
+    marginLeft: "20px",
     lineHeight: "29px",
     marginTop: "35px",
     color: "#18022E",
@@ -70,7 +96,16 @@ const useStyles = makeStyles((theme) => ({
   pageMockUp: {
     position: "absolute",
     top: "100vh" + "80px",
+    width: "35%",
     paddingRight: 92,
+  },
+  pageMockUp2: {
+    position: "relative",
+    top: "100vh" + "80px",
+    width: "80%",
+    alignContent: "center",
+    marginRight: "50px",
+    marginTop: "50px",
   },
   textHolder: {
     width: "100%",
@@ -78,11 +113,27 @@ const useStyles = makeStyles((theme) => ({
   mockUpGrid: {
     width: "100%",
   },
+  mockUpGrid2: {
+    width: "100%",
+    float: "center",
+    alignContent: "center",
+  },
 }));
 
 function Card1() {
   const classes = useStyles();
-  return (
+
+  const [innerWidth, setInnerWidth] = useState(window.innerWidth);
+
+  function handleResize(e) {
+    setInnerWidth(window.innerWidth);
+    console.log("width", innerWidth);
+  }
+
+  window.addEventListener("resize", handleResize);
+
+  const isWeb = innerWidth >= 700;
+  const view = isWeb ? (
     <div style={{ width: "100%" }}>
       <Grid
         container
@@ -125,7 +176,51 @@ function Card1() {
         </Grid>
       </Grid>
     </div>
+  ) : (
+    <div style={{ width: "100%", alignContent: "center" }}>
+      <Grid
+        container
+        className={classes.bigGrid}
+        direction="column"
+        justify="center"
+        alignItems="center"
+        xs={12}
+        style={{ margin: 0, padding: 0 }}
+      >
+        <Grid
+          item
+          className={classes.textHolder}
+          direction="column"
+          xs={12}
+          style={{ margin: 0, padding: 0 }}
+        >
+          <div className={classes.bigText2}>
+            <div>Full Visibility</div>
+          </div>
+          <div className={classes.medText2}>
+            <div>Automatically link your subscriptions and get a full</div>
+            <div>picture of what subscriptions you are currently using.</div>
+          </div>
+        </Grid>
+        <Grid
+          container
+          className={classes.mockUpGrid2}
+          direction="row"
+          justify="flex-end"
+          alignItems="center"
+          xs={12}
+          style={{ margin: 0, padding: 0 }}
+        >
+          <img
+            className={classes.pageMockUp2}
+            src="/Group 191.png"
+            alt="mockPage"
+          ></img>
+        </Grid>
+      </Grid>
+    </div>
   );
+  return view;
 }
 
 export default Card1;

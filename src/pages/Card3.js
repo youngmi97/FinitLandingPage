@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
@@ -86,6 +86,7 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     top: "100vh" + "80px",
     paddingRight: 92,
+    width: "35%",
   },
   pageMockUp1: {
     position: "absolute",
@@ -93,6 +94,7 @@ const useStyles = makeStyles((theme) => ({
     top: "330vh",
     zIndex: 0,
     opacity: 0.2,
+    width: "70%",
   },
   textHolder: {
     width: "100%",
@@ -100,11 +102,61 @@ const useStyles = makeStyles((theme) => ({
   mockUpGrid: {
     width: "100%",
   },
+  mockUpGrid2: {
+    width: "100%",
+    float: "center",
+    alignContent: "center",
+  },
+  pageMockUp2: {
+    position: "relative",
+    top: "100vh" + "80px",
+    width: "80%",
+    alignContent: "center",
+    marginTop: "50px",
+    marginRight: "50px",
+  },
+  medText2: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    width: "90%",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: "24px",
+    marginLeft: "20px",
+    lineHeight: "29px",
+    marginTop: "35px",
+    color: "#18022E",
+  },
+  bigText2: {
+    display: "flex",
+    width: "90%",
+    flexDirection: "column",
+    alignItems: "center",
+    fontStyle: "normal",
+    fontWeight: "bold",
+    fontSize: "50px",
+    lineHeight: "55px",
+    marginLeft: "20px",
+    /* or 122% */
+    letterSpacing: "0.02em",
+  },
 }));
 
 function Card3() {
   const classes = useStyles();
-  return (
+
+  const [innerWidth, setInnerWidth] = useState(window.innerWidth);
+
+  function handleResize(e) {
+    setInnerWidth(window.innerWidth);
+    console.log("width", innerWidth);
+  }
+
+  window.addEventListener("resize", handleResize);
+
+  const isWeb = innerWidth >= 700;
+  const view = isWeb ? (
     <div style={{ width: "100%" }}>
       <Grid
         container
@@ -155,7 +207,54 @@ function Card3() {
         </Grid>
       </Grid>
     </div>
+  ) : (
+    <div style={{ width: "100%" }}>
+      <Grid
+        container
+        className={classes.bigGrid}
+        direction="coumn"
+        justify="center"
+        alignItems="center"
+        xs={12}
+        style={{ margin: 0, padding: 0 }}
+      >
+        <Grid
+          item
+          className={classes.textHolder}
+          direction="column"
+          xs={12}
+          style={{ margin: 0, padding: 0 }}
+        >
+          <div className={classes.bigText2}>
+            <div>Monitor usage </div>
+          </div>
+          <div className={classes.medText2}>
+            <div>Is this plan the one for you? </div>
+          </div>
+          <div className={classes.medText2}>
+            <div>Confidently make the choice to continue use by </div>
+            <div>knowing how much you use it.</div>
+          </div>
+        </Grid>
+        <Grid
+          container
+          className={classes.mockUpGrid2}
+          direction="row"
+          justify="flex-end"
+          alignItems="center"
+          xs={12}
+          style={{ margin: 0, padding: 0 }}
+        >
+          <img
+            className={classes.pageMockUp2}
+            src="/Frame 170.png"
+            alt="mockPage"
+          ></img>
+        </Grid>
+      </Grid>
+    </div>
   );
+  return view;
 }
 
 export default Card3;
