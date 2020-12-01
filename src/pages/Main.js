@@ -19,13 +19,13 @@ const useStyles = makeStyles((theme) => ({
   startButton: {
     marginLeft: "16px",
     height: "56px",
-    width: "25%",
+    width: "250px",
     background: "#6600FF;",
     boxShadow: "8px 16px 40px rgba(42, 0, 77, 0.3)",
     borderRadius: "6px",
     fontStyle: "normal",
     fontWeight: 600,
-    fontSize: "12px",
+    fontSize: "14px",
     lineHeight: "17px",
     /* identical to box height */
 
@@ -213,7 +213,7 @@ function Main(props) {
                 color="primary"
                 disabled={btnDisabled}
               >
-                GET STARTED
+                ↗︎ Apply for Beta Access
               </Button>
             </Grid>
           </div>
