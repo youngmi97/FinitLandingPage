@@ -236,7 +236,7 @@ function Main(props) {
           ></img>
           {/* <img
             className={classes.phoneMockUp}
-            src="/phoneMockUp.svg"
+            src="/phoneMockUp.png"
             alt="mockPhone"
           ></img> */}
         </Grid>

@@ -31,6 +31,9 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     letterSpacing: "0.03em",
     textTransform: "uppercase",
+    "&:hover": {
+      background: "white",
+    },
   },
   bigGrid: { width: "100%", margin: 0, padding: 0 },
   bigText: {
