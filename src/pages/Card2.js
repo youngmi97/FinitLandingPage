@@ -155,7 +155,7 @@ function Card2() {
         >
           <img
             className={classes.pageMockUp}
-            src="/Group 169.png"
+            src="/Group 169.svg"
             alt="mockPage"
           ></img>
         </Grid>
@@ -215,7 +215,7 @@ function Card2() {
         >
           <img
             className={classes.pageMockUp2}
-            src="/Group 169.png"
+            src="/Group 169.svg"
             alt="mockPage"
           ></img>
         </Grid>

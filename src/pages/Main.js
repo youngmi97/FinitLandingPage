@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
+import Input from "@material-ui/core/Input";
 import { Grid } from "@material-ui/core";
 import "../App.css";
 
@@ -13,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "4px",
     border: "1px solid #EFEFF4",
     boxSizing: "border-box",
+    padding: 10,
   },
   startButton: {
     marginLeft: "16px",
@@ -188,7 +190,7 @@ function Main(props) {
               xs={12}
               spacing={3}
             >
-              <TextField
+              {/* <TextField
                 className={classes.textField}
                 id="outlined-basic"
                 label="Email"
@@ -196,6 +198,13 @@ function Main(props) {
                 errorText={"Please enter a valid email"}
                 onChange={checkEmail}
                 variant="outlined"
+              /> */}
+              <Input
+                className={classes.textField}
+                placeholder="Email"
+                type="email"
+                disableUnderline={true}
+                onChange={checkEmail}
               />
               <Button
                 className={classes.startButton}
@@ -257,7 +266,7 @@ function Main(props) {
               xs={12}
               spacing={3}
             >
-              <TextField
+              {/* <TextField
                 className={classes.textField}
                 id="outlined-basic"
                 label="Email"
@@ -265,6 +274,13 @@ function Main(props) {
                 errorText={"Please enter a valid email"}
                 onChange={checkEmail}
                 variant="outlined"
+              /> */}
+              <Input
+                className={classes.textField}
+                placeholder="Email"
+                type="email"
+                disableUnderline={true}
+                onChange={checkEmail}
               />
               <Button
                 className={classes.startButton}

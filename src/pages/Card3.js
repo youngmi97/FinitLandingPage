@@ -178,7 +178,7 @@ function Card3() {
         >
           <img
             className={classes.pageMockUp}
-            src="/Frame 170.png"
+            src="/Frame 170.svg"
             alt="mockPage"
           ></img>
         </Grid>
@@ -191,7 +191,7 @@ function Card3() {
         >
           <img
             className={classes.pageMockUp1}
-            src="/path.png"
+            src="/Path.svg"
             alt="mockPage"
           ></img>
           <div className={classes.bigText}>
@@ -247,7 +247,7 @@ function Card3() {
         >
           <img
             className={classes.pageMockUp2}
-            src="/Frame 170.png"
+            src="/Frame 170.svg"
             alt="mockPage"
           ></img>
         </Grid>
