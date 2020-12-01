@@ -122,7 +122,6 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
-    padding: "20px",
   },
 
   submitInfo2: {
