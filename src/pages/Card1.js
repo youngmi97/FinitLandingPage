@@ -43,19 +43,7 @@ const useStyles = makeStyles((theme) => ({
     /* or 122% */
     letterSpacing: "0.02em",
   },
-  bigText2: {
-    display: "flex",
-    width: "100%",
-    flexDirection: "column",
-    alignItems: "center",
-    fontStyle: "normal",
-    fontWeight: "bold",
-    fontSize: "40px",
-    lineHeight: "88px",
 
-    /* or 122% */
-    letterSpacing: "0.02em",
-  },
   medText: {
     display: "flex",
     flexDirection: "column",
@@ -75,11 +63,24 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     fontStyle: "normal",
     fontWeight: "normal",
-    fontSize: "20px",
+    fontSize: "12px",
 
-    lineHeight: "29px",
-    marginTop: "35px",
+    lineHeight: "20px",
+    marginTop: "20px",
     color: "#18022E",
+  },
+  bigText2: {
+    display: "flex",
+    width: "100%",
+    flexDirection: "column",
+    alignItems: "center",
+    fontStyle: "normal",
+    fontWeight: "bold",
+    fontSize: "30px",
+    lineHeight: "40px",
+
+    /* or 122% */
+    letterSpacing: "0.02em",
   },
   submitInfo: {
     width: "100%",

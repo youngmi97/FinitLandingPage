@@ -124,10 +124,10 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     fontStyle: "normal",
     fontWeight: "normal",
-    fontSize: "20px",
+    fontSize: "12px",
 
-    lineHeight: "29px",
-    marginTop: "35px",
+    lineHeight: "20px",
+    marginTop: "20px",
     color: "#18022E",
   },
   bigText2: {
@@ -137,8 +137,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     fontStyle: "normal",
     fontWeight: "bold",
-    fontSize: "40px",
-    lineHeight: "55px",
+    fontSize: "30px",
+    lineHeight: "40px",
 
     /* or 122% */
     letterSpacing: "0.02em",
