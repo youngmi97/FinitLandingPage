@@ -82,25 +82,28 @@ const useStyles = makeStyles((theme) => ({
   mockUpGrid2: {
     width: "100%",
     float: "center",
-    alignContent: "center",
+    display: "flex",
+
+    flexDirection: "column",
+    alignItems: "center",
   },
   pageMockUp2: {
     position: "relative",
     top: "100vh" + "80px",
     width: "80%",
     alignContent: "center",
-    marginRight: "50px",
+
     marginTop: "50px",
   },
   medText2: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    width: "90%",
+    width: "100%",
     fontStyle: "normal",
     fontWeight: "normal",
-    fontSize: "24px",
-    marginLeft: "20px",
+    fontSize: "20px",
+
     lineHeight: "29px",
     marginTop: "35px",
     color: "#18022E",
@@ -112,7 +115,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     fontStyle: "normal",
     fontWeight: "bold",
-    fontSize: "50px",
+    fontSize: "40px",
     lineHeight: "55px",
 
     /* or 122% */

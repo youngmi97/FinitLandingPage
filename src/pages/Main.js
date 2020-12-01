@@ -16,6 +16,15 @@ const useStyles = makeStyles((theme) => ({
     boxSizing: "border-box",
     padding: 10,
   },
+  textField1: {
+    background: "#ffffff",
+    width: "40%",
+    height: "56px",
+    borderRadius: "4px",
+    border: "1px solid #EFEFF4",
+    boxSizing: "border-box",
+    padding: 10,
+  },
   startButton: {
     marginLeft: "16px",
     height: "56px",
@@ -33,7 +42,27 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: "0.03em",
     textTransform: "uppercase",
     "&:hover": {
-      background: "#6600FF;",
+      background: "#6600FF",
+    },
+  },
+  startButton1: {
+    marginLeft: "16px",
+    height: "56px",
+    width: "40%",
+    background: "#6600FF;",
+    boxShadow: "8px 16px 40px rgba(42, 0, 77, 0.3)",
+    borderRadius: "6px",
+    fontStyle: "normal",
+    fontWeight: 600,
+    fontSize: "10px",
+    lineHeight: "17px",
+    /* identical to box height */
+
+    textAlign: "center",
+    letterSpacing: "0.03em",
+    textTransform: "uppercase",
+    "&:hover": {
+      background: "#6600FF",
     },
   },
   bigGrid: { width: "100%" },
@@ -55,7 +84,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     fontStyle: "normal",
     fontWeight: "bold",
-    fontSize: "70px",
+    fontSize: "50px",
     lineHeight: "88px",
     /* or 122% */
     letterSpacing: "0.02em",
@@ -79,7 +108,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     fontStyle: "normal",
     fontWeight: "normal",
-    fontSize: "24px",
+    fontSize: "20px",
     lineHeight: "29px",
     marginTop: "35px",
   },
@@ -94,7 +123,6 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     width: "100%",
     padding: "20px",
-    marginLeft: "20px",
   },
 
   submitInfo2: {
@@ -278,22 +306,24 @@ function Main(props) {
                 onChange={checkEmail}
                 variant="outlined"
               /> */}
-              <Input
-                className={classes.textField}
-                placeholder="Email"
-                type="email"
-                disableUnderline={true}
-                onChange={checkEmail}
-              />
-              <Button
-                className={classes.startButton}
-                onClick={openForm}
-                variant="contained"
-                color="primary"
-                disabled={btnDisabled}
-              >
-                GET STARTED
-              </Button>
+              <div style={{ width: "100%" }}>
+                <Input
+                  className={classes.textField1}
+                  placeholder="Email"
+                  type="email"
+                  disableUnderline={true}
+                  onChange={checkEmail}
+                />
+                <Button
+                  className={classes.startButton1}
+                  onClick={openForm}
+                  variant="contained"
+                  color="primary"
+                  disabled={btnDisabled}
+                >
+                  ↗︎ Apply for Beta Access
+                </Button>
+              </div>
             </Grid>
           </div>
         </Grid>

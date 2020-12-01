@@ -45,14 +45,14 @@ const useStyles = makeStyles((theme) => ({
   },
   bigText2: {
     display: "flex",
-    width: "90%",
+    width: "100%",
     flexDirection: "column",
     alignItems: "center",
     fontStyle: "normal",
     fontWeight: "bold",
-    fontSize: "50px",
+    fontSize: "40px",
     lineHeight: "88px",
-    marginLeft: "20px",
+
     /* or 122% */
     letterSpacing: "0.02em",
   },
@@ -72,11 +72,11 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    width: "90%",
+    width: "100%",
     fontStyle: "normal",
     fontWeight: "normal",
-    fontSize: "24px",
-    marginLeft: "20px",
+    fontSize: "20px",
+
     lineHeight: "29px",
     marginTop: "35px",
     color: "#18022E",
@@ -104,7 +104,7 @@ const useStyles = makeStyles((theme) => ({
     top: "100vh" + "80px",
     width: "80%",
     alignContent: "center",
-    marginRight: "50px",
+
     marginTop: "50px",
   },
   textHolder: {
@@ -116,7 +116,10 @@ const useStyles = makeStyles((theme) => ({
   mockUpGrid2: {
     width: "100%",
     float: "center",
-    alignContent: "center",
+    display: "flex",
+    width: "100%",
+    flexDirection: "column",
+    alignItems: "center",
   },
 }));
 
@@ -213,7 +216,7 @@ function Card1() {
         >
           <img
             className={classes.pageMockUp2}
-            src="/Group191.png"
+            src="/Group 191.png"
             alt="mockPage"
           ></img>
         </Grid>
