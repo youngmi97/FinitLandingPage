@@ -6,6 +6,8 @@ import Input from "@material-ui/core/Input";
 import { Grid } from "@material-ui/core";
 import "../App.css";
 
+var AWS = require("aws-sdk");
+
 const useStyles = makeStyles((theme) => ({
   textField: {
     background: "#ffffff",
@@ -181,10 +183,12 @@ function Main(props) {
 
   function openForm() {
     window.open("https://sureplus.typeform.com/to/A0mG6n8u");
+    console.log("final email", email);
   }
 
   function checkEmail(e) {
-    console.log("email value", e.target.value);
+    //console.log("email value", e.target.value);
+    setEmail(e.target.value);
     if (isValidEmailAddress(e.target.value)) {
       setBtnDisabled(false);
     } else {

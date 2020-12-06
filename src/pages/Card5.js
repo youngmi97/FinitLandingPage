@@ -133,6 +133,10 @@ function Card3() {
     console.log("width", innerWidth);
   }
 
+  function openForm() {
+    window.open("https://sureplus.typeform.com/to/A0mG6n8u");
+  }
+
   window.addEventListener("resize", handleResize);
   const isWeb = innerWidth >= 700;
 
@@ -165,6 +169,7 @@ function Card3() {
               className={classes.startButton}
               variant="contained"
               color="primary"
+              onClick={openForm}
             >
               GET STARTED
             </Button>
@@ -201,6 +206,7 @@ function Card3() {
               className={classes.startButton}
               variant="contained"
               color="primary"
+              onClick={openForm}
             >
               GET STARTED
             </Button>
