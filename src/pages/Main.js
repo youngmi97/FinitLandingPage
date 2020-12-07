@@ -6,6 +6,8 @@ import Input from "@material-ui/core/Input";
 import { Grid } from "@material-ui/core";
 import "../App.css";
 
+var AWS = require("aws-sdk");
+
 const useStyles = makeStyles((theme) => ({
   textField: {
     background: "#ffffff",
@@ -47,6 +49,25 @@ const useStyles = makeStyles((theme) => ({
   },
   startButton1: {
     marginLeft: "16px",
+    height: "56px",
+    width: "40%",
+    background: "#6600FF;",
+    boxShadow: "8px 16px 40px rgba(42, 0, 77, 0.3)",
+    borderRadius: "6px",
+    fontStyle: "normal",
+    fontWeight: 600,
+    fontSize: "10px",
+    lineHeight: "17px",
+    /* identical to box height */
+
+    textAlign: "center",
+    letterSpacing: "0.03em",
+    textTransform: "uppercase",
+    "&:hover": {
+      background: "#6600FF",
+    },
+  },
+  startButton2: {
     height: "56px",
     width: "40%",
     background: "#6600FF;",
@@ -116,6 +137,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     height: "100px",
   },
+
   submitInfoNew: {
     display: "flex",
     flexDirection: "row",
@@ -139,6 +161,16 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     verticalAlign: "middle",
   },
+
+  submitInfo4: {
+    marginTop: "10px",
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    verticalAlign: "middle",
+    width: "60%",
+  },
+
   pageMockUp: {
     float: "right",
     width: "45%",
@@ -181,10 +213,12 @@ function Main(props) {
 
   function openForm() {
     window.open("https://sureplus.typeform.com/to/A0mG6n8u");
+    console.log("final email", email);
   }
 
   function checkEmail(e) {
-    console.log("email value", e.target.value);
+    //console.log("email value", e.target.value);
+    setEmail(e.target.value);
     if (isValidEmailAddress(e.target.value)) {
       setBtnDisabled(false);
     } else {
@@ -306,22 +340,36 @@ function Main(props) {
                 variant="outlined"
               /> */}
               <div style={{ width: "100%" }}>
-                <Input
-                  className={classes.textField1}
-                  placeholder="Email"
-                  type="email"
-                  disableUnderline={true}
-                  onChange={checkEmail}
-                />
-                <Button
-                  className={classes.startButton1}
-                  onClick={openForm}
-                  variant="contained"
-                  color="primary"
-                  disabled={btnDisabled}
+                <Grid
+                  container
+                  className={classes.submitInfo3}
+                  direction="row"
+                  justify="center"
+                  alignItems="center"
+                  xs={12}
+                  spacing={2}
                 >
-                  ↗︎ Apply for Beta Access
-                </Button>
+                  <Grid item direction="row" xs={12}>
+                    <Input
+                      className={classes.textField1}
+                      placeholder="Email"
+                      type="email"
+                      disableUnderline={true}
+                      onChange={checkEmail}
+                    />
+                  </Grid>
+                  <Grid item direction="row" xs={12}>
+                    <Button
+                      className={classes.startButton2}
+                      onClick={openForm}
+                      variant="contained"
+                      color="primary"
+                      disabled={btnDisabled}
+                    >
+                      ↗︎ Apply for Beta Access
+                    </Button>
+                  </Grid>
+                </Grid>
               </div>
             </Grid>
           </div>
