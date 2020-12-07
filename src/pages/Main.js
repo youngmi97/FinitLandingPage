@@ -76,7 +76,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "6px",
     fontStyle: "normal",
     fontWeight: 600,
-    fontSize: "10px",
+    fontSize: "15px",
     marginTop: 8,
     lineHeight: "17px",
     /* identical to box height */
