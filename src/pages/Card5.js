@@ -35,6 +35,27 @@ const useStyles = makeStyles((theme) => ({
       background: "white",
     },
   },
+  startButton1: {
+    height: "57px",
+    width: "45%",
+    background: "white",
+    boxShadow: "8px 16px 40px rgba(47, 4, 89, 0.3)",
+    borderRadius: "6px",
+    fontStyle: "normal",
+    marginTop: 64,
+    fontWeight: 600,
+    fontSize: "17px",
+    lineHeight: "17px",
+    color: "#5c17A6",
+    /* identical to box height */
+
+    textAlign: "center",
+    letterSpacing: "0.03em",
+    textTransform: "uppercase",
+    "&:hover": {
+      background: "white",
+    },
+  },
   bigGrid: { width: "100%", margin: 0, padding: 0 },
   bigText: {
     display: "flex",
@@ -166,7 +187,7 @@ function Card3() {
           </div>
           <div style={{ width: "100%" }}>
             <Button
-              className={classes.startButton}
+              className={classes.startButton1}
               variant="contained"
               color="primary"
               onClick={openForm}
