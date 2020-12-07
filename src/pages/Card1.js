@@ -202,8 +202,10 @@ function Card1() {
             <div>Full Visibility</div>
           </div>
           <div className={classes.medText2}>
-            <div>Automatically link your subscriptions and get a full</div>
-            <div>picture of what subscriptions you are currently using.</div>
+            <div>
+              Automatically link your subscriptions and get a full picture of
+              what subscriptions you are currently using.
+            </div>
           </div>
         </Grid>
         <Grid
