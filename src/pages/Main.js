@@ -74,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     fontSize: "72px",
     lineHeight: "88px",
-    /* or 122% */
+    /* or 172% */
     letterSpacing: "0.02em",
     marginLeft: "100px",
   },
@@ -86,7 +86,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     fontSize: "40px",
     lineHeight: "50px",
-    /* or 122% */
+    /* or 172% */
     letterSpacing: "0.02em",
   },
   medText: {
@@ -108,7 +108,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     fontStyle: "normal",
     fontWeight: "normal",
-    fontSize: "12px",
+    fontSize: "17px",
     lineHeight: "20px",
     marginTop: "20px",
   },

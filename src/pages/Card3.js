@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "6px",
     fontStyle: "normal",
     fontWeight: 600,
-    fontSize: "12px",
+    fontSize: "17px",
     lineHeight: "17px",
     /* identical to box height */
 
@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     fontSize: "50px",
     lineHeight: "61px",
-    /* or 122% */
+    /* or 172% */
     letterSpacing: "0.02em",
   },
   medText: {
@@ -125,7 +125,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     fontStyle: "normal",
     fontWeight: "normal",
-    fontSize: "12px",
+    fontSize: "17px",
 
     lineHeight: "20px",
     marginTop: "20px",
@@ -141,7 +141,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "30px",
     lineHeight: "40px",
 
-    /* or 122% */
+    /* or 172% */
     letterSpacing: "0.02em",
   },
 }));
