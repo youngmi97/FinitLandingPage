@@ -197,7 +197,7 @@ function Card1() {
           className={classes.textHolder}
           direction="column"
           xs={12}
-          style={{ margin: 0, padding: 0, paddingLeft: 10, paddingRight: 10 }}
+          style={{ margin: 0, padding: 0, paddingLeft: 20, paddingRight: 20 }}
         >
           <div className={classes.bigText2}>
             <div>Full Visibility</div>
