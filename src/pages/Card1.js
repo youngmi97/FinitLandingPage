@@ -61,6 +61,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     width: "100%",
+
     fontStyle: "normal",
     fontWeight: "normal",
     fontSize: "17px",
@@ -196,7 +197,7 @@ function Card1() {
           className={classes.textHolder}
           direction="column"
           xs={12}
-          style={{ margin: 0, padding: 0 }}
+          style={{ margin: 0, padding: 0, paddingLeft: 10, paddingRight: 10 }}
         >
           <div className={classes.bigText2}>
             <div>Full Visibility</div>

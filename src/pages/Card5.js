@@ -195,7 +195,7 @@ function Card3() {
           justify="center"
           alignItems="center"
           xs={12}
-          style={{ margin: 0, padding: 0 }}
+          style={{ margin: 0, padding: 0, paddingLeft: 10, paddingRight: 10 }}
         >
           <div className={classes.bigText2}>
             <div>Control how you spend,</div>
