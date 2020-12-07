@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   },
   textField1: {
     background: "#ffffff",
-    width: "40%",
+    width: "100%",
     height: "56px",
     borderRadius: "4px",
     border: "1px solid #EFEFF4",
@@ -69,13 +69,15 @@ const useStyles = makeStyles((theme) => ({
   },
   startButton2: {
     height: "56px",
-    width: "40%",
+    width: "100%",
+
     background: "#6600FF;",
     boxShadow: "8px 16px 40px rgba(42, 0, 77, 0.3)",
     borderRadius: "6px",
     fontStyle: "normal",
     fontWeight: 600,
     fontSize: "10px",
+    marginTop: 8,
     lineHeight: "17px",
     /* identical to box height */
 
@@ -246,7 +248,7 @@ function Main(props) {
             <div>Add, make changes and cancel</div>
             <div>subscriptions in one place</div>
           </div>
-          <div className={classes.submitInfo}>
+          <div className={classes.submitInfo} style={{ padding: 0, margin: 0 }}>
             <Grid
               item
               className={classes.submitInfo2}
@@ -322,13 +324,16 @@ function Main(props) {
             <div>Add, make changes and cancel</div>
             <div>subscriptions in one place</div>
           </div>
-          <div className={classes.submitInfoNew}>
+          <div
+            className={classes.submitInfoNew}
+            style={{ padding: 0, margin: 0 }}
+          >
             <Grid
               item
               className={classes.submitInfo3}
               direction="row"
               xs={12}
-              spacing={3}
+              spacing={0}
             >
               {/* <TextField
                 className={classes.textField}
@@ -347,9 +352,14 @@ function Main(props) {
                   justify="center"
                   alignItems="center"
                   xs={12}
-                  spacing={2}
+                  spacing={0}
                 >
-                  <Grid item direction="row" xs={12}>
+                  <Grid
+                    item
+                    direction="row"
+                    xs={12}
+                    style={{ paddingLeft: 16, paddingRight: 16 }}
+                  >
                     <Input
                       className={classes.textField1}
                       placeholder="Email"
@@ -358,7 +368,12 @@ function Main(props) {
                       onChange={checkEmail}
                     />
                   </Grid>
-                  <Grid item direction="row" xs={12}>
+                  <Grid
+                    item
+                    direction="row"
+                    xs={12}
+                    style={{ paddingLeft: 16, paddingRight: 16 }}
+                  >
                     <Button
                       className={classes.startButton2}
                       onClick={openForm}

@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
   startButton: {
     height: "57px",
-    width: "45%",
+    width: "100%",
     background: "white",
     boxShadow: "8px 16px 40px rgba(47, 4, 89, 0.3)",
     borderRadius: "6px",
@@ -201,16 +201,21 @@ function Card3() {
             <div>Control how you spend,</div>
             <div>and when you spend.</div>
           </div>
-          <div style={{ width: "100%" }}>
-            <Button
-              className={classes.startButton}
-              variant="contained"
-              color="primary"
-              onClick={openForm}
-            >
-              GET STARTED
-            </Button>
-          </div>
+        </Grid>
+        <Grid
+          item
+          direction="row"
+          xs={12}
+          style={{ paddingLeft: 16, paddingRight: 16 }}
+        >
+          <Button
+            className={classes.startButton}
+            variant="contained"
+            color="primary"
+            onClick={openForm}
+          >
+            GET STARTED
+          </Button>
         </Grid>
       </Grid>
     </div>
