@@ -222,7 +222,8 @@ function Card3() {
           style={{ margin: 0, padding: 0, paddingLeft: 32, paddingRight: 32 }}
         >
           <div className={classes.bigText2}>
-            <div>Change billing dates</div>
+            <div>Change</div>
+            <div>billing dates</div>
           </div>
           <div className={classes.medText2}>
             <div>
