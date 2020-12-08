@@ -238,6 +238,7 @@ function Main(props) {
         justify="center"
         alignItems="center"
         xs={12}
+        style={{ minHeight: "100vh" }}
       >
         <Grid item className={classes.textHolder} direction="column" xs={6}>
           <div className={classes.bigText}>
