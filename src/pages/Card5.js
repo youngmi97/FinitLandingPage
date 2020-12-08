@@ -182,8 +182,7 @@ function Card3() {
           style={{ margin: 0, padding: 0 }}
         >
           <div className={classes.bigText}>
-            <div>Control how you spend,</div>
-            <div>and when you spend.</div>
+            <div>Control how you spend, and when you spend.</div>
           </div>
           <div style={{ width: "100%" }}>
             <Button
