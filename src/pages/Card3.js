@@ -113,7 +113,7 @@ const useStyles = makeStyles((theme) => ({
   pageMockUp2: {
     position: "relative",
     top: "100vh" + "80px",
-    width: "80%",
+    width: "83%",
     alignContent: "center",
 
     marginTop: "50px",
@@ -125,7 +125,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     fontStyle: "normal",
     fontWeight: "normal",
-    fontSize: "17px",
+    fontSize: "16px",
 
     lineHeight: "20px",
     marginTop: "20px",
@@ -138,7 +138,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     fontStyle: "normal",
     fontWeight: "bold",
-    fontSize: "30px",
+    fontSize: "40px",
     lineHeight: "40px",
 
     /* or 172% */
@@ -232,11 +232,10 @@ function Card3() {
             <div>Monitor usage </div>
           </div>
           <div className={classes.medText2}>
-            <div>Is this plan the one for you? </div>
-          </div>
-          <div className={classes.medText2}>
-            <div>Confidently make the choice to continue use by </div>
-            <div>knowing how much you use it.</div>
+            <div>
+              Confidently make the choice to continue use by knowing how much
+              you use it.
+            </div>
           </div>
         </Grid>
         <Grid

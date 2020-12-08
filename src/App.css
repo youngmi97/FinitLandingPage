@@ -31,7 +31,7 @@
   );
   backdrop-filter: blur(47.13px);
   background-color: blueviolet;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,11 +40,6 @@
   color: white;
 }
 .App-card {
-  background: linear-gradient(
-    107.15deg,
-    rgba(118, 16, 235, 0.05) 0%,
-    rgba(118, 16, 235, 0) 100%
-  );
   min-height: 90vh;
   display: flex;
   flex-direction: column;
@@ -53,9 +48,16 @@
   font-size: calc(10px + 2vmin);
   color: #200440;
 }
+.App-Total {
+  background: linear-gradient(
+    107.15deg,
+    rgba(118, 16, 235, 0.05) 0%,
+    rgba(118, 16, 235, 0) 100%
+  );
+}
 .App-bottom {
   background: #5c12a6;
-  min-height: 50vh;
+  min-height: 35vh;
   display: flex;
   flex-direction: column;
   align-items: center;

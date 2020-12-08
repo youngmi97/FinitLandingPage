@@ -358,7 +358,7 @@ function Main(props) {
                     item
                     direction="row"
                     xs={12}
-                    style={{ paddingLeft: 16, paddingRight: 16 }}
+                    style={{ paddingLeft: 32, paddingRight: 32 }}
                   >
                     <Input
                       className={classes.textField1}
@@ -372,7 +372,7 @@ function Main(props) {
                     item
                     direction="row"
                     xs={12}
-                    style={{ paddingLeft: 16, paddingRight: 16 }}
+                    style={{ paddingLeft: 32, paddingRight: 32 }}
                   >
                     <Button
                       className={classes.startButton2}

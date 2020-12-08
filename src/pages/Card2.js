@@ -90,7 +90,7 @@ const useStyles = makeStyles((theme) => ({
   pageMockUp2: {
     position: "relative",
     top: "100vh" + "80px",
-    width: "80%",
+    width: "83%",
     alignContent: "center",
 
     marginTop: "50px",
@@ -102,7 +102,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     fontStyle: "normal",
     fontWeight: "normal",
-    fontSize: "17px",
+    fontSize: "16px",
 
     lineHeight: "20px",
     marginTop: "20px",
@@ -115,7 +115,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     fontStyle: "normal",
     fontWeight: "bold",
-    fontSize: "30px",
+    fontSize: "40px",
     lineHeight: "40px",
 
     /* or 172% */
@@ -199,12 +199,10 @@ function Card2() {
           style={{ margin: 0, padding: 0, paddingLeft: 32, paddingRight: 32 }}
         >
           <div className={classes.bigText2}>
-            <div>Say no to unwanted </div>
-            <div>recurring payments</div>
+            <div>Keep Track of Free Trials</div>
           </div>
           <div className={classes.medText2}>
-            <div>Forgot about that free trial you meant to cancel? </div>
-            <div>Don’t worry, we’ve got you covered.</div>
+            <div>Say no to unwanted recurring payments. </div>
           </div>
         </Grid>
         <Grid

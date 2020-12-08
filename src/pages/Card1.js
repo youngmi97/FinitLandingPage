@@ -64,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
 
     fontStyle: "normal",
     fontWeight: "normal",
-    fontSize: "17px",
+    fontSize: "16px",
 
     lineHeight: "20px",
     marginTop: "20px",
@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     fontStyle: "normal",
     fontWeight: "bold",
-    fontSize: "30px",
+    fontSize: "40px",
     lineHeight: "40px",
 
     /* or 172% */
@@ -104,7 +104,7 @@ const useStyles = makeStyles((theme) => ({
   pageMockUp2: {
     position: "relative",
     top: "100vh" + "80px",
-    width: "80%",
+    width: "83%",
     alignContent: "center",
 
     marginTop: "50px",
@@ -203,10 +203,7 @@ function Card1() {
             <div>Full Visibility</div>
           </div>
           <div className={classes.medText2}>
-            <div>
-              Automatically link your subscriptions and get a full picture of
-              what subscriptions you are currently using.
-            </div>
+            <div>Get a full picture of your subscriptions</div>
           </div>
         </Grid>
         <Grid

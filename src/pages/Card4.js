@@ -112,7 +112,7 @@ const useStyles = makeStyles((theme) => ({
   pageMockUp2: {
     position: "relative",
     top: "100vh" + "80px",
-    width: "80%",
+    width: "83%",
     alignContent: "center",
 
     marginTop: "50px",
@@ -124,7 +124,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     fontStyle: "normal",
     fontWeight: "normal",
-    fontSize: "17px",
+    fontSize: "16px",
 
     lineHeight: "20px",
     marginTop: "20px",
@@ -137,7 +137,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     fontStyle: "normal",
     fontWeight: "bold",
-    fontSize: "30px",
+    fontSize: "40px",
     lineHeight: "40px",
 
     /* or 172% */
@@ -225,11 +225,10 @@ function Card3() {
             <div>Change billing dates</div>
           </div>
           <div className={classes.medText2}>
-            <div>Why should you be stuck at your first choice of </div>
-            <div>billing date?</div>
-          </div>
-          <div className={classes.medText2}>
-            <div>Have more control over your spending.</div>
+            <div>
+              Make changes to your recurring billing date. Have control over
+              your spending.
+            </div>
           </div>
         </Grid>
         <Grid

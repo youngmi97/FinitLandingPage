@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "8px 16px 40px rgba(47, 4, 89, 0.3)",
     borderRadius: "6px",
     fontStyle: "normal",
-    marginTop: 64,
+    marginTop: 32,
     fontWeight: 600,
     fontSize: "17px",
     lineHeight: "17px",
@@ -219,14 +219,14 @@ function Card3() {
           style={{ margin: 0, padding: 0, paddingLeft: 32, paddingRight: 32 }}
         >
           <div className={classes.bigText2}>
-            <div>Control how you spend, and when you spend.</div>
+            <div>Control how and when you spend</div>
           </div>
         </Grid>
         <Grid
           item
           direction="row"
           xs={12}
-          style={{ paddingLeft: 16, paddingRight: 16 }}
+          style={{ paddingLeft: 32, paddingRight: 32 }}
         >
           <Button
             className={classes.startButton}

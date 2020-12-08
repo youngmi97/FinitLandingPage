@@ -18,20 +18,22 @@ function App() {
         ></img>
         <Main />
       </header>
-      <div className="App-card" style={{ margin: 0, padding: 0 }}>
-        <Card1 />
-      </div>
-      <div className="App-card" style={{ margin: 0, padding: 0 }}>
-        <Card2 />
-      </div>
-      <div className="App-card" style={{ margin: 0, padding: 0 }}>
-        <Card3 />
-      </div>
-      <div className="App-card" style={{ margin: 0, padding: 0 }}>
-        <Card4 />
-      </div>
-      <div className="App-bottom" style={{ margin: 0, padding: 0 }}>
-        <Card5 />
+      <div className="App-Total">
+        <div className="App-card" style={{ margin: 0, padding: 0 }}>
+          <Card1 />
+        </div>
+        <div className="App-card" style={{ margin: 0, padding: 0 }}>
+          <Card2 />
+        </div>
+        <div className="App-card" style={{ margin: 0, padding: 0 }}>
+          <Card3 />
+        </div>
+        <div className="App-card" style={{ margin: 0, padding: 0 }}>
+          <Card4 />
+        </div>
+        <div className="App-bottom" style={{ margin: 0, padding: 0 }}>
+          <Card5 />
+        </div>
       </div>
     </div>
   );
