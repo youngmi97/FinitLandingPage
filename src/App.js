@@ -31,9 +31,9 @@ function App() {
         <div className="App-card" style={{ margin: 0, padding: 0 }}>
           <Card4 />
         </div>
-        <div className="App-bottom" style={{ margin: 0, padding: 0 }}>
-          <Card5 />
-        </div>
+      </div>
+      <div className="App-bottom" style={{ margin: 0, padding: 0 }}>
+        <Card5 />
       </div>
     </div>
   );

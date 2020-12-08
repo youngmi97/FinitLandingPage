@@ -115,8 +115,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     fontStyle: "normal",
     fontWeight: "bold",
-    fontSize: "40px",
-    lineHeight: "40px",
+    fontSize: "42px",
+    lineHeight: "52px",
 
     /* or 172% */
     letterSpacing: "0.02em",
