@@ -166,7 +166,7 @@ function Card3() {
         justify="center"
         alignItems="center"
         xs={12}
-        style={{ margin: 0, padding: 0 }}
+        style={{ margin: 0, padding: 0, minHeight: "100vh" }}
       >
         <Grid
           container
