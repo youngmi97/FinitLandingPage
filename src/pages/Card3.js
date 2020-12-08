@@ -192,11 +192,6 @@ function Card3() {
           xs={6}
           style={{ margin: 0, padding: 0 }}
         >
-          <img
-            className={classes.pageMockUp1}
-            src="/Path.png"
-            alt="mockPage"
-          ></img>
           <div className={classes.bigText}>
             <div>Monitor usage </div>
           </div>
