@@ -182,7 +182,8 @@ function Card3() {
           style={{ margin: 0, padding: 0 }}
         >
           <div className={classes.bigText}>
-            <div>Control how you spend, and when you spend.</div>
+            <div>Control how you spend,</div>
+            <div>and when you spend.</div>
           </div>
           <div style={{ width: "100%" }}>
             <Button
@@ -215,11 +216,10 @@ function Card3() {
           justify="center"
           alignItems="center"
           xs={12}
-          style={{ margin: 0, padding: 0, paddingLeft: 20, paddingRight: 20 }}
+          style={{ margin: 0, padding: 0, paddingLeft: 32, paddingRight: 32 }}
         >
           <div className={classes.bigText2}>
-            <div>Control how you spend,</div>
-            <div>and when you spend.</div>
+            <div>Control how you spend, and when you spend.</div>
           </div>
         </Grid>
         <Grid
