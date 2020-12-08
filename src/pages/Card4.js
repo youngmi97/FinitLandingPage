@@ -223,7 +223,7 @@ function Card3() {
         >
           <div className={classes.bigText2}>
             <div>Change</div>
-            <div>billing dates</div>
+            <div>Billing Dates</div>
           </div>
           <div className={classes.medText2}>
             <div>
